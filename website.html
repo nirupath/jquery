@@ -1,0 +1,123 @@
+<html>
+<head>
+  <script src="jquery.js" charset="utf-8"></script>
+<style>
+.a {
+ background-color: powderblue;
+ width: 650px;
+ margin: 10px;
+ border-radius: 10px;
+ height: 300px;
+ text-align: center;}
+.b {
+ background-color: #CCD1D1
+;
+ width: 400px;
+ border-radius: 10px;
+ float: left;
+ padding: 10px;
+ height: 300px;
+}
+.c {
+ background-color: #CCD1D1;
+ width: 600px;
+ float: right;
+ border-radius: 10px;
+ height: 300px;
+}
+.f{
+  position: bottom;
+  left: auto;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  padding: 0px 0px 1px 0px;
+  margin:50px 1px 5px 1px;
+}
+#panel, #uki {
+  padding: 5px;
+  text-align: center;
+  background-color: lightblue;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+  </style>
+<script>
+$(document).ready(function(){
+  $("#uki").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("ul").hide();
+  });
+  $("#show").click(function(){
+    $("ul").show();
+  });
+});
+$(document).ready(function(){
+  $("#detail").click(function(){
+    $("#pro").hide();
+  });
+});
+$(document).ready(function(){
+  $("#enter").mouseenter(function(){
+    alert("The Page Says You enterd to Uki!");
+  });
+});
+$(document).ready(function(){
+  $("h3").mouseover(function(){
+    $("h3").css("background-color", "lightblue");
+  });
+  $("h3").mouseout(function(){
+    $("h3").css("background-color", "lightgray");
+  });
+});
+</script>
+
+</head>
+<body>
+ <div align="center">
+ <a href="index.html">Home</a>|
+ <a href="form.html">Form</a>|
+ <a href="table.html">Timetable</a>
+</div>
+<div align="center">
+ <img src="uki.png" alt="uki">
+</div>
+<center>
+ <br><br>
+
+<div id="uki">
+  <p>Welcome to Uki</p>
+  </div>
+  <div id="panel"> <p>Hai Uki!</p>
+    </div>
+
+ <div class="a"><h4="enter">Welcome to Uki Stepping-stone to tech life</h4><br><br>It is a full scholarship based Accelerator program for Coding in Jaffna, Sri Lanka targeting students who has completed Advanced Level examinations and don’t have access to university education or any other form of vocational education. It is aimed to provide the necessary training to enter Computer Software industry or to start an IT startup.
+This is a joint initiative by Yarl IT Hub and SERVE Foundation. Yarl IT Hub has been functioning for the last five years as a not for profit social enterprise focusing on technology entrepreneurship in northern Sri Lanka and SERVE Foundation is a four year old foundation focusing on using technology to uplift secondary education standards in rural schools in northern Sri Lanka.</div></center>
+
+<div class="b"><strong><h3>COURSE</h3></strong><br>Our vision to be a leading centre of excellence in teaching,learning,research and scholarship
+
+<ul><li>Programming</li>
+<li>Basic Business Skills</li>
+<li>Spoken English and Communication Skills</li>
+<li>Personal-Coaching</li>
+</ul>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</div>
+<div class="c"><strong><h3>CODING ACCELERATOR PROGRAM</h3></strong><br><br><p id="pro">This Coding Accelerator program is an intensive training on full-stack development with server-side Node.js and modern, client-side, front-end libraries and frameworks.Throughout this intensive course the student will study professional software development techniques and practices as he/she advances his/her skills on JavaScript.</p>
+<button  id="detail">Details</button>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ <footer  class="f"align="center">2017 © Uki All Rights Reserved. A joint initiative by Yarl IT Hub and SERVE Foundation
+</footer>
+</div>
+</body>
+</html>
